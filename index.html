@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONEKT - Connect. Create. Capitalize.</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for aesthetic, minimal design */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #000;
+            border-radius: 4px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0a0a0a',
+                        'secondary-light': '#f5f5f5',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary-light text-primary-dark antialiased transition-colors duration-500">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-10 bg-secondary-light/95 backdrop-blur-sm shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Title -->
+            <a href="#" class="text-2xl font-black tracking-tighter uppercase">
+                KONEKT<span class="text-gray-400">.</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#buyers" class="hover:text-gray-500 transition-colors">For Businesses (Buyers)</a>
+                <a href="#sellers" class="hover:text-gray-500 transition-colors">For Freelancers (Sellers)</a>
+            </nav>
+
+            <!-- Auth Buttons -->
+            <div class="flex space-x-4">
+                <button class="text-sm font-medium hover:text-gray-500 transition-colors">Log In</button>
+                <button class="px-4 py-2 text-sm font-medium bg-primary-dark text-secondary-light rounded-full border border-primary-dark 
+                                hover:bg-white hover:text-primary-dark transition-all duration-300 shadow-md">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-28 text-center">
+            <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-none mb-6">
+                Connect. Create. <span class="text-gray-500">Capitalize.</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-700 max-w-3xl mx-auto mb-10 font-light">
+                The minimal marketplace for maximum impact. KONEKT transforms ambition into income.
+            </p>
+            <a href="#sellers" class="inline-block px-8 py-4 text-lg font-bold bg-primary-dark text-secondary-light rounded-lg border-2 border-primary-dark 
+                                      hover:bg-white hover:text-primary-dark transition-all duration-300 shadow-xl hover:shadow-2xl uppercase tracking-wider">
+                Start Earning Now
+            </a>
+        </section>
+
+        <!-- Buyers Section -->
+        <section id="buyers" class="bg-white py-20 sm:py-28 border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black uppercase tracking-widest text-gray-900">
+                        FOR BUYERS: SCALE YOUR BUSINESS
+                    </h2>
+                    <p class="mt-4 text-xl text-gray-600 font-light">
+                        Hire elite talent instantly, on-demand, without the friction.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Feature Card 1 -->
+                    <div class="p-8 border-2 border-primary-dark rounded-xl shadow-lg bg-secondary-light transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-4xl mb-4 font-extrabold">01.</div>
+                        <h3 class="text-xl font-bold mb-3">Vetted Professionals</h3>
+                        <p class="text-gray-700 text-sm">
+                            Access a curated pool of freelancers whose skills are rigorously tested. No more searching through endless profiles.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="p-8 border-2 border-primary-dark rounded-xl shadow-lg bg-secondary-light transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-4xl mb-4 font-extrabold">02.</div>
+                        <h3 class="text-xl font-bold mb-3">Transparent Pricing</h3>
+                        <p class="text-gray-700 text-sm">
+                            Clear, upfront rates mean no hidden fees or negotiation hassles. Budget confidently and efficiently.
+                        </p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="p-8 border-2 border-primary-dark rounded-xl shadow-lg bg-secondary-light transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-4xl mb-4 font-extrabold">03.</div>
+                        <h3 class="text-xl font-bold mb-3">Project Protection</h3>
+                        <p class="text-gray-700 text-sm">
+                            Secure escrow system ensures funds are released only when you are 100% satisfied with the delivered work.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-16">
+                    <a href="#" class="inline-block px-6 py-3 text-base font-semibold border-2 border-primary-dark bg-white text-primary-dark rounded-full 
+                                      hover:bg-primary-dark hover:text-white transition-all duration-300">
+                        Post Your First Project
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sellers Section -->
+        <section id="sellers" class="bg-secondary-light py-20 sm:py-28">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black uppercase tracking-widest text-gray-900">
+                        FOR SELLERS: MAXIMIZE YOUR INCOME
+                    </h2>
+                    <p class="mt-4 text-xl text-gray-600 font-light">
+                        Take control of your rates and access premium projects that pay what you're worth.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Seller Benefit 1 -->
+                    <div class="flex items-start space-x-6 p-6 border-l-4 border-primary-dark bg-white rounded-lg shadow-md">
+                        <span class="text-3xl font-extrabold text-primary-dark">↑</span>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">High-Value Clientele</h3>
+                            <p class="text-gray-700">
+                                Stop competing on price. KONEKT focuses on quality, attracting clients who are ready to invest in expertise.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Seller Benefit 2 -->
+                    <div class="flex items-start space-x-6 p-6 border-l-4 border-primary-dark bg-white rounded-lg shadow-md">
+                        <span class="text-3xl font-extrabold text-primary-dark">$</span>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Fast, Secure Payouts</h3>
+                            <p class="text-gray-700">
+                                Our payment system guarantees you get paid quickly after project completion, with minimal service fees.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Seller Benefit 3 -->
+                    <div class="flex items-start space-x-6 p-6 border-l-4 border-primary-dark bg-white rounded-lg shadow-md">
+                        <span class="text-3xl font-extrabold text-primary-dark">⌘</span>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">You Set The Terms</h3>
+                            <p class="text-gray-700">
+                                Full autonomy over your work, schedule, and pricing. Your profile is your business, managed by you.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Seller Benefit 4 -->
+                    <div class="flex items-start space-x-6 p-6 border-l-4 border-primary-dark bg-white rounded-lg shadow-md">
+                        <span class="text-3xl font-extrabold text-primary-dark">★</span>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Build Your Reputation</h3>
+                            <p class="text-gray-700">
+                                Showcase your completed projects and receive verifiable ratings that drive more business your way.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-16">
+                    <a href="#" class="inline-block px-8 py-4 text-lg font-bold bg-primary-dark text-secondary-light rounded-lg border-2 border-primary-dark 
+                                      hover:bg-white hover:text-primary-dark transition-all duration-300 shadow-xl uppercase tracking-wider">
+                        Create Your Seller Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-secondary-light py-10 mt-12 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p class="mb-4 md:mb-0">&copy; 2025 KONEKT. All rights reserved. | Minimal, not passive.</p>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-gray-400 transition-colors">Privacy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-gray-400 transition-colors">Terms</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-gray-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
